@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123f30">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NOP Shopping | Discover. Shop. Save.">
+<meta property="og:description" content="Discover trending products, explore partner offers or request direct product sourcing through WhatsApp.">
+<meta name="description" content="Discover trending products worldwide with NOP Shopping. Explore affiliate offers or request direct product sourcing through WhatsApp.">
+<title>NOP Shopping | Discover. Shop. Save.</title>
+<style>
+:root{--green:#14543e;--deep:#103d2e;--gold:#e6bd5c;--cream:#fbfaf5;--ink:#17231d;--muted:#66736c;--line:#e7e9e2;--white:#fff;--mint:#eaf3ed}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink)}
+a{color:inherit}.skip-link{position:absolute;left:12px;top:-60px;background:#fff;color:var(--deep);padding:12px 16px;border-radius:8px;z-index:100;font-weight:800}.skip-link:focus{top:12px} :focus-visible{outline:3px solid var(--gold);outline-offset:3px}.topline{background:#0b3024;color:#eaf3ed;text-align:center;padding:8px 14px;font-size:12px;letter-spacing:.2px}
+header{background:var(--deep);color:white;padding:16px max(5%,calc((100% - 1180px)/2));display:flex;align-items:center;justify-content:space-between;gap:18px;position:sticky;top:0;z-index:10;box-shadow:0 4px 18px #0a2d201c}
+.brand{font-size:24px;font-weight:900;letter-spacing:.4px;white-space:nowrap}.brand span{color:var(--gold)}
+nav{display:flex;gap:22px;align-items:center}nav a{text-decoration:none;font-size:13px;font-weight:700;color:#f5f7f4}nav a:hover{color:var(--gold)}
+.header-actions{display:flex;gap:10px;align-items:center}.cart-btn,.menu-btn{border:1px solid #ffffff55;background:transparent;color:white;border-radius:999px;padding:10px 14px;font-weight:700;cursor:pointer}.cart-count{background:var(--gold);color:#17231d;border-radius:50%;padding:2px 6px;margin-left:5px;font-size:11px}
+.hero{background:linear-gradient(115deg,#e9f1e9 0%,#f9f6e9 100%);padding:62px 5%;}.hero-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.eyebrow{color:var(--green);font-weight:800;text-transform:uppercase;font-size:11px;letter-spacing:1.7px}.hero h1{font-size:clamp(38px,6vw,66px);line-height:1.02;letter-spacing:-2px;color:var(--deep);margin:14px 0}.hero p{max-width:560px;line-height:1.7;color:var(--muted);font-size:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:8px;padding:13px 18px;background:var(--green);color:white;text-decoration:none;font-weight:800;font-size:13px;cursor:pointer}.btn:hover{background:var(--deep)}.btn.gold{background:var(--gold);color:#253326}.btn.outline{background:white;color:var(--green);border:1px solid #cad9ce}.hero-art{min-height:280px;border-radius:22px;background:radial-gradient(circle at 75% 25%,#477e62,#164b37 58%,#0e3428);display:flex;align-items:center;justify-content:center;color:white;text-align:center;padding:30px;position:relative;overflow:hidden;box-shadow:0 18px 40px #163e2b25}
+.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #ffffff30;border-radius:50%;width:290px;height:290px}.hero-art:after{width:390px;height:390px}.hero-mark{position:relative;z-index:1}.hero-mark b{display:block;font-size:76px;letter-spacing:4px;color:var(--gold)}.hero-mark span{font-size:13px;letter-spacing:2px;text-transform:uppercase}
+main{max-width:1180px;margin:auto;padding:42px 5% 70px}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:-2px 0 48px}.benefit{background:white;border:1px solid var(--line);padding:17px;border-radius:12px;display:flex;gap:12px;align-items:center}.benefit .ico{font-size:23px}.benefit b{display:block;font-size:13px}.benefit small{color:var(--muted);font-size:11px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin:38px 0 18px}.section-head h2{margin:0;color:var(--deep);font-size:27px;letter-spacing:-.5px}.section-head p{margin:6px 0 0;color:var(--muted);font-size:13px}
+.search-row{display:flex;gap:10px;align-items:center;margin:18px 0}.search{flex:1;min-width:0;border:1px solid var(--line);border-radius:9px;padding:13px 15px;background:white;font-size:14px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0 22px}.filter{border:1px solid #d9e2db;background:white;color:var(--green);padding:9px 13px;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer}.filter.active,.filter:hover{background:var(--green);color:white;border-color:var(--green)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{background:white;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 5px 20px #1b38240a;display:flex;flex-direction:column}.product-visual{height:180px;display:grid;place-items:center;background:linear-gradient(140deg,#edf4ee,#f8f2df);font-size:64px;position:relative}.product-visual .pill{position:absolute;top:12px;left:12px;background:#fff;color:var(--green);border-radius:99px;padding:6px 9px;font-size:9px;font-weight:900;letter-spacing:.5px}.card-body{padding:17px;display:flex;flex-direction:column;flex:1}.card h3{font-size:16px;line-height:1.35;margin:10px 0 7px}.muted{font-size:12px;color:var(--muted);line-height:1.55}.price{font-size:21px;font-weight:900;color:var(--deep);margin:10px 0 5px}.type{font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:var(--green);font-weight:900}.card-actions{display:flex;gap:8px;margin-top:auto;padding-top:14px}.card-actions .btn{flex:1;padding:11px 9px;font-size:11px}.empty{grid-column:1/-1;text-align:center;padding:35px;background:white;border:1px dashed #ccd8ce;border-radius:12px;color:var(--muted)}
+.split{background:#edf4ee;border-radius:18px;padding:26px;margin:42px 0;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}.split h2{margin:0 0 8px;color:var(--deep)}.split p{margin:0;color:var(--muted);font-size:13px;line-height:1.6}
+.notice{background:#fff8e7;border-left:4px solid var(--gold);padding:14px 16px;border-radius:7px;color:#6b592c;font-size:12px;line-height:1.6;margin-top:22px}
+footer{background:var(--deep);color:#eaf3ed;padding:38px 5% 22px}.footer-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.footer-inner h3{color:var(--gold);margin:0 0 12px}.footer-inner p,.footer-inner a{font-size:12px;line-height:1.8;color:#d4e1d8}.footer-inner a{display:block;text-decoration:none}.copyright{max-width:1180px;margin:24px auto 0;border-top:1px solid #ffffff25;padding-top:16px;color:#b7c9be;font-size:11px}
+.drawer-backdrop{position:fixed;inset:0;background:#0007;z-index:30;display:none}.drawer{position:fixed;right:0;top:0;height:100%;width:min(420px,100%);background:white;z-index:31;padding:22px;transform:translateX(105%);transition:.25s;overflow:auto;box-shadow:-10px 0 30px #0002}.drawer.open{transform:translateX(0)}.drawer-backdrop.open{display:block}.drawer-head{display:flex;justify-content:space-between;align-items:center}.drawer-head h2{margin:0}.close{border:0;background:#eef3ef;border-radius:50%;width:34px;height:34px;font-size:20px;cursor:pointer}.cart-line{display:flex;justify-content:space-between;gap:12px;padding:15px 0;border-bottom:1px solid var(--line);font-size:13px}.cart-line small{display:block;color:var(--muted);margin-top:4px}.cart-line button{border:0;background:none;color:#a33;cursor:pointer}.cart-total{display:flex;justify-content:space-between;font-weight:900;padding:18px 0}.cart-note{font-size:12px;color:var(--muted);line-height:1.5}
+@media(max-width:760px){header{padding:13px 5%;flex-wrap:wrap}.brand{font-size:21px}nav{order:3;width:100%;justify-content:space-between;gap:10px}nav a{font-size:12px}.hero{padding:42px 5%}.hero-inner{grid-template-columns:1fr}.hero-art{min-height:190px}.hero-mark b{font-size:58px}.benefits{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.product-visual{height:135px;font-size:48px}.card-body{padding:12px}.card h3{font-size:14px}.card-actions{flex-direction:column}.split{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr 1fr}.footer-inner>div:first-child{grid-column:1/-1}}
+@media(max-width:420px){.grid{grid-template-columns:1fr 1fr}.product-visual{height:120px}.card h3{font-size:13px}.card .muted{font-size:11px}.card-actions .btn{font-size:10px}.section-head h2{font-size:23px}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#shop">Skip to products</a>
+<div class="topline">Shop trending finds worldwide · Affiliate deals and direct-order sourcing · WhatsApp support</div>
+<header>
+  <a class="brand" href="#home" style="text-decoration:none">NOP <span>SHOPPING</span></a>
+  <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav>
+  <div class="header-actions"><a class="cart-btn" href="https://wa.me/2349118791047?text=Hello%20NOP%20Shopping%2C%20I%20need%20help%20with%20a%20product." target="_blank" rel="noopener noreferrer" style="text-decoration:none">WhatsApp us ↗</a></div>
+</header>
+<section class="hero" id="home"><div class="hero-inner">
+  <div><div class="eyebrow">Discover more. Shop smarter.</div><h1>Good finds.<br>Better choices.</h1>
+  <p>Welcome to NOP Shopping — discover trending products across technology, fashion, beauty, home and everyday lifestyle. Shop through partner offers or message us to request a product from anywhere we can source it.</p>
+  <a class="btn" href="#shop">Explore the collection&nbsp; →</a></div>
+  <div class="hero-art"><div class="hero-mark"><b>NOP</b><span>Shop smart · Shop with confidence</span></div></div>
+</div></section>
+<main>
+  <div class="benefits">
+    <div class="benefit"><span class="ico">🌍</span><div><b>Discover worldwide</b><small>Discover products from partner sellers</small></div></div>
+    <div class="benefit"><span class="ico">🔎</span><div><b>Clear product routes</b><small>Clear affiliate and direct-order labels</small></div></div>
+    <div class="benefit"><span class="ico">🤝</span><div><b>Customer-first support</b><small>Message our team on WhatsApp</small></div></div>
+  </div>
+
+  <section id="shop">
+    <div class="section-head"><div><div class="eyebrow">The NOP collection</div><h2>Explore products</h2><p>Explore sample offers or ask us to source a trending product for you.</p></div></div>
+    <div class="search-row"><input class="search" id="searchInput" type="search" placeholder="Search products or categories..." aria-label="Search products or categories" autocomplete="off"></div>
+    <div class="filters" id="filters">
+      <button class="filter active" data-filter="All" aria-pressed="true">All products</button><button class="filter" data-filter="Electronics" aria-pressed="false">Electronics</button><button class="filter" data-filter="Fashion" aria-pressed="false">Fashion</button><button class="filter" data-filter="Beauty" aria-pressed="false">Beauty</button><button class="filter" data-filter="Home" aria-pressed="false">Home & living</button><button class="filter" data-filter="Lifestyle" aria-pressed="false">Lifestyle</button>
+    </div>
+    <p id="resultCount" class="muted" role="status" aria-live="polite">Showing all 6 products</p>
+    <div class="grid" id="productGrid">
+      <article class="card" data-category="Electronics" data-search="oraimo 30000mah ultra fast charging power bank electronics phone charger">
+        <div class="product-visual"><span class="pill">PARTNER OFFER</span>🔋</div><div class="card-body">
+          <div class="type">Affiliate · Electronics</div><h3>Oraimo 30,000mAh Ultra Fast Charging Power Bank</h3>
+          <div class="price">₦29,000</div><p class="muted">Price shown in the partner listing. Confirm current price, stock and delivery terms on the seller's page before buying.</p>
+          <div class="card-actions"><a class="btn" href="https://vanfleek.com/r/E5F6658B75C09990" target="_blank" rel="noopener noreferrer">Shop with partner ↗</a></div>
+        </div>
+      </article>
+      <article class="card" data-category="Electronics" data-search="wireless earbuds bluetooth electronics audio 19000 naira nationwide delivery">
+        <div class="product-visual"><span class="pill">PARTNER OFFER</span>🎧</div><div class="card-body"><div class="type">Affiliate · Electronics</div><h3>Wireless Bluetooth Earbuds</h3><div class="price">₦19,000</div><p class="muted">Nationwide delivery in Nigeria. Confirm the current price, stock and delivery terms on the partner seller's page before buying.</p><div class="card-actions"><a class="btn" href="https://vanfleek.com/r/ED28ED817CEA408" target="_blank" rel="noopener noreferrer">Shop with partner ↗</a></div></div>
+      </article>
+      <article class="card" data-category="Electronics" data-search="oraimo spacebuds neo otw-323 wireless bluetooth earbuds deep bass long battery life">
+        <div class="product-visual"><span class="pill">PARTNER OFFER</span>🎧</div><div class="card-body">
+          <div class="type">Affiliate · Electronics</div><h3>Oraimo SpaceBuds Neo OTW-323 Wireless Earbuds</h3>
+          <div class="price">Check current price</div><p class="muted">Wireless Bluetooth earbuds with deep bass and long battery life. Confirm current price, stock and delivery terms on the seller's page before buying.</p>
+          <div class="card-actions"><a class="btn" href="https://vanfleek.com/r/7F1F1CB7C7385E78" target="_blank" rel="noopener noreferrer">Shop with partner ↗</a></div>
+        </div>
+      </article>
+      <article class="card" data-category="Fashion" data-search="fashion clothing bags accessories">
+        <div class="product-visual"><span class="pill">DIRECT · ENQUIRY</span>👜</div><div class="card-body"><div class="type">Direct order · Enquiry</div><h3>Fashion & accessories</h3><div class="price">Request a quote</div><p class="muted">Tell us what you are looking for. We will confirm supplier, price and delivery options.</p><div class="card-actions"><button class="btn direct-enquiry" data-product="Fashion & accessories">Enquire</button></div></div></article>
+      <article class="card" data-category="Beauty" data-search="beauty skincare personal care">
+        <div class="product-visual"><span class="pill">DIRECT · ENQUIRY</span>🧴</div><div class="card-body"><div class="type">Direct order · Enquiry</div><h3>Beauty & personal care</h3><div class="price">Request a quote</div><p class="muted">Request product sourcing. We will verify product details and availability before confirming an order.</p><div class="card-actions"><button class="btn direct-enquiry" data-product="Beauty & personal care">Enquire</button></div></div></article>
+      <article class="card" data-category="Home" data-search="home living kitchen organization decor">
+        <div class="product-visual"><span class="pill">DIRECT · ENQUIRY</span>🏡</div><div class="card-body"><div class="type">Direct order · Enquiry</div><h3>Home & living essentials</h3><div class="price">Request a quote</div><p class="muted">Share the item you need and your destination. We will check sourcing and delivery.</p><div class="card-actions"><button class="btn direct-enquiry" data-product="Home & living essentials">Enquire</button></div></div></article>
+      <article class="card" data-category="Lifestyle" data-search="lifestyle travel sports accessories">
+        <div class="product-visual"><span class="pill">DIRECT · ENQUIRY</span>🎒</div><div class="card-body"><div class="type">Direct order · Enquiry</div><h3>Lifestyle & travel accessories</h3><div class="price">Request a quote</div><p class="muted">Let us know what you need. Final price, supplier and delivery are confirmed individually.</p><div class="card-actions"><button class="btn direct-enquiry" data-product="Lifestyle & travel accessories">Enquire</button></div></div></article>
+    </div>
+    <div class="notice"><b>Shopping transparency:</b> The Oraimo and wireless earbuds listings are affiliate offers. If you buy through a partner link, the seller handles payment, fulfilment and delivery; NOP Shopping may earn a commission. Other categories are product-sourcing enquiries, not confirmed in-stock products. We confirm supplier, total price, shipping and payment terms before accepting a direct order. Prices and availability can change; verify the seller listing before purchase.</div>
+  </section>
+
+  <section class="split" id="how"><div><h2>Two ways to shop with NOP</h2><p><b>Partner offers:</b> follow the labelled partner link and complete your purchase on the seller's website. <b>Direct orders:</b> send an enquiry, then wait for NOP Shopping to confirm the product, supplier, final price and delivery terms. Never pay until those details are confirmed.</p></div><a class="btn gold" href="#contact">Contact NOP Shopping</a></section>
+  <section id="contact"><div class="section-head"><div><div class="eyebrow">We're here to help</div><h2>Contact & support</h2><p>For product enquiries, sourcing requests and order questions, message NOP Shopping on WhatsApp.</p></div></div>
+    <div class="notice"><b>WhatsApp support:</b> <a href="https://wa.me/2349118791047" target="_blank" rel="noopener noreferrer">+234 911 879 1047</a>. Send us the product name, link or picture and your delivery country. We will check supplier availability, total price, shipping and payment terms before you decide. This website does not collect payments; do not pay until an order and its terms have been confirmed in writing.</div>
+  </section>
+</main>
+<footer><div class="footer-inner">
+  <div><h3>NOP SHOPPING</h3><p>Discover trending products and shop with confidence. Powered by NOP Business Enterprise.</p><p>WhatsApp: <a href="https://wa.me/2349118791047" target="_blank" rel="noopener noreferrer">+234 911 879 1047</a></p><p>Shop smart. Pay less. Shop with confidence.</p></div>
+  <div><h3>Explore</h3><a href="#shop">All products</a><a href="#how">How it works</a><a href="#contact">Contact</a></div>
+  <div><h3>Customer information</h3><a href="#contact">Ordering enquiries</a><a href="#contact">Shipping information</a><a href="#contact">Returns & support</a></div>
+</div><div class="copyright">© <span id="year"></span> NOP Shopping. All rights reserved.</div></footer>
+
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const searchInput=document.getElementById('searchInput'), cards=[...document.querySelectorAll('.card')], filters=[...document.querySelectorAll('.filter')];
+let active='All';
+function filterCards(){const q=searchInput.value.toLowerCase().trim();let shown=0;cards.forEach(c=>{const okCat=active==='All'||c.dataset.category===active;const okText=(c.dataset.search+' '+c.innerText).toLowerCase().includes(q);c.style.display=okCat&&okText?'flex':'none';if(okCat&&okText)shown++;});const empty=document.getElementById('emptyState');if(!shown&&!empty){const message=document.createElement('div');message.id='emptyState';message.className='empty';message.textContent='No matching products. Try another search or category.';document.getElementById('productGrid').appendChild(message)}else if(shown&&empty)empty.remove();document.getElementById('resultCount').textContent='Showing '+shown+' of '+cards.length+' products';}
+filters.forEach(b=>b.addEventListener('click',()=>{filters.forEach(x=>{x.classList.remove('active');x.setAttribute('aria-pressed','false')});b.classList.add('active');b.setAttribute('aria-pressed','true');active=b.dataset.filter;filterCards()}));searchInput.addEventListener('input',filterCards);
+
+document.querySelectorAll('.direct-enquiry').forEach(b=>b.addEventListener('click',()=>{const p=b.dataset.product;const message='Hello NOP Shopping, I am interested in: '+p+'. Please help me check product options, total price and delivery to my country.';const url='https://wa.me/2349118791047?text='+encodeURIComponent(message);const opened=window.open(url,'_blank','noopener,noreferrer');if(!opened)window.location.href=url;}));
+// Respect visitors who prefer reduced motion.
+if(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.style.scrollBehavior="auto";}
+</script>
+</body></html>
